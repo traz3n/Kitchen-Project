@@ -1,0 +1,15 @@
+beef
+grocery
+meats
+2
+july
+pork
+grocery
+meats
+3
+august
+chicken
+grocery
+meats
+1
+june
