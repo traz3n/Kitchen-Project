@@ -1,81 +1,86 @@
-# 🧑‍🍳 Kitch — Smart Kitchen Inventory & Recipe Manager
+# 🧑‍🍳 Kitch — Kitchen Inventory & Recipe Manager
 
-**Kitch** is a modern Java Swing desktop app for managing your **kitchen inventory**, **shopping list**, and **recipes** in one place.
-It automatically saves all changes, keeps your ingredient data consistent across windows, and provides a clean, minimal dark-mode interface.
+**Kitch** is a personal Java project I built to organize my kitchen inventory, shopping list, and recipes in one place.  
+It automatically saves everything as you make changes and keeps your data connected between windows.
 
 ---
 
 ## 🌟 Overview
 
-This project was originally built in **Eclipse WindowBuilder**, then refactored and modernized in **VS Code** for better maintainability.  
-It follows a simple **MVC (Model-View-Controller)** architecture to separate logic, data, and UI components.
+I originally built this app using **Eclipse WindowBuilder** to design the interface, then improved and modernized it in **VS Code** with custom UI and auto-save features.  
+It’s written in **Java 17 (Swing)** and stores all data in simple **CSV and text files**, so you can easily view or edit them outside the app.
 
 ---
 
-## 🧩 Key Features
+## 🧩 What It Can Do
 
 ### 🗃️ Inventory & Shopping
-- Manage pantry items and shopping lists in separate tables
-- Auto-save on every change (no “Save” button needed)
-- “Move 0-Qty → Shopping” action to handle out-of-stock items
-- Fast live search and CSV-based data storage under `/data`
+- Add, edit, and delete items with automatic saving  
+- Separate tables for your pantry and shopping list  
+- “Move to Shopping” automatically detects items with 0 quantity  
+- Search instantly as you type  
+- Data stored in `/data/inventory.csv` and `/data/shopping.csv`
 
 ### 🍲 Recipe Builder
-- Two-pane interface for **Ingredients** and **Steps**
-- Supports multiple recipes (switchable with one click)
-- Auto-linked to inventory and saved as CSV / TXT files
-- Keyboard shortcuts for quick switching and navigation
+- Build and save your own recipes  
+- Two-pane view: Ingredients and Steps  
+- Switch between multiple recipes easily  
+- Connect ingredients directly with your inventory list  
+- Auto-saves in `/data/ingredients` and `/data/recipes`
 
-### 🎨 Modern UI Design
-- Built with **Java Swing** and **WindowBuilder (Eclipse)**
-- Dark-mode color palette:
-  `#011936` Oxford Blue `#465362` Charcoal `#82A3A1` Cambridge Blue `#9FC490` Olivine `#C0DFA1` Tea Green
-- Rounded, responsive buttons and proportional tables
-- Subtle hover effects and auto-resizing layouts for full-screen use
+### 🎨 Interface & Design
+- Built with **Java Swing** (customized with WindowBuilder)  
+- Clean **dark mode** color palette:  
+  `#011936` Oxford Blue · `#465362` Charcoal · `#82A3A1` Cambridge Blue · `#9FC490` Olivine · `#C0DFA1` Tea Green  
+- Large rounded buttons with hover effects  
+- Responsive layout that scales with your window  
+- No “Save” button — everything updates live
 
 ---
 
-## ⚙️ Tech Stack
+## ⚙️ Tech Details
 
-| Category | Tools / Technologies |
-|-----------|----------------------|
+| Category | Tools |
+|-----------|-------|
 | Language | Java SE 17 |
-| GUI Framework | Swing + Eclipse WindowBuilder |
-| IDEs | Eclipse & VS Code |
-| Architecture | MVC (Model / View / Controller) |
-| Data Storage | CSV / TXT (local) |
-| Theme | Custom dark-mode UI |
+| GUI | Swing + WindowBuilder (Eclipse) |
+| Editor | VS Code & Eclipse |
+| Storage | CSV / TXT (auto-save) |
+| Theme | Custom dark mode |
 
 ---
 
-## 🧠 Design Principles
+## 🧠 How It Works
 
-- **Layered Architecture:** Models store data, Controllers handle logic, and the UI renders views.
-- **Auto-Save Everywhere:** Every change persists immediately for a seamless UX.
-- **Data Transparency:** All CSVs and recipe files are readable and editable by hand.
-- **Scalable Foundation:** Future-ready for migration to JavaFX or SQLite backend.
+Each part of the app handles one job:
+- The **logic** (like saving or checking quantities) runs behind the scenes.  
+- The **interface** (built with Swing) displays everything clearly.  
+- Data is **auto-saved** to CSV and TXT files after every change.  
+- Everything updates live — no manual file management needed.
 
 ---
 
-## 🚀 Future Enhancements
-
-- 🔔 **Expiry reminders & notifications**
-- 📱 **Web or mobile version**
-- 🧾 **Export grocery lists**
-- 🧠 **Smart suggestions**
+## 🚀 Future Ideas
+- 🔔 Expiry reminders and notifications  
+- 📱 A web or mobile version
+- 🧾 Export grocery lists 
+- 🧠 Smart recipe suggestions
 
 ---
 
 ## 👨‍💻 Developer
 
 **Miguel Joaquin Beltran**  
-📍 UC Davis — Computer Science Major  
+📍 UC Davis — Computer Science Major (Class of 2027)  
 💼 [LinkedIn](https://www.linkedin.com/in/miguel-beltran-184741294/) | [GitHub](https://github.com/traz3n)
 
 ---
 
 ## 🪶 License
 
-This project is released under the [MIT License](LICENSE).
+This project is released under the [MIT License](./LICENSE).
 
 ---
+
+> *“Good design makes everyday tasks simple and intuitive.”*  
+> — Miguel Beltran
