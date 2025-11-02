@@ -1,4 +1,4 @@
-# 🧑‍🍳 Kitch — Kitchen Inventory & Recipe Manager
+# 🧑‍🍳 Kitch | Kitchen Inventory & Recipe Manager
 
 **Kitch** is a personal Java project I built to organize my kitchen inventory, shopping list, and recipes in one place.  
 It automatically saves everything as you make changes and keeps your data connected between windows.
@@ -34,7 +34,7 @@ It’s written in **Java 17 (Swing)** and stores all data in simple **CSV and te
   `#011936` Oxford Blue · `#465362` Charcoal · `#82A3A1` Cambridge Blue · `#9FC490` Olivine · `#C0DFA1` Tea Green  
 - Large rounded buttons with hover effects  
 - Responsive layout that scales with your window  
-- No “Save” button — everything updates live
+- No “Save” button, everything updates live
 
 ---
 
@@ -56,7 +56,7 @@ Each part of the app handles one job:
 - The **logic** (like saving or checking quantities) runs behind the scenes.  
 - The **interface** (built with Swing) displays everything clearly.  
 - Data is **auto-saved** to CSV and TXT files after every change.  
-- Everything updates live — no manual file management needed.
+- Everything updates live, no manual file management needed.
 
 ---
 
@@ -71,7 +71,7 @@ Each part of the app handles one job:
 ## 👨‍💻 Developer
 
 **Miguel Joaquin Beltran**  
-📍 UC Davis — Computer Science Major (Class of 2027)  
+📍 UC Davis - Computer Science Major (Class of 2027)  
 💼 [LinkedIn](https://www.linkedin.com/in/miguel-beltran-184741294/) | [GitHub](https://github.com/traz3n)
 
 ---
