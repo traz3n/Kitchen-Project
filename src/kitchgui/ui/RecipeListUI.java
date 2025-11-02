@@ -24,6 +24,7 @@ import javax.swing.table.TableRowSorter;
 import java.awt.*;
 import java.awt.event.*;
 import java.nio.file.Path;
+
 import java.util.Timer;
 import java.util.TimerTask;
 
@@ -512,7 +513,9 @@ public class RecipeListUI extends JFrame {
         table.setFillsViewportHeight(true);
         table.setShowHorizontalLines(false);
         table.setShowVerticalLines(false);
-        table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+        // ✅ Fit to viewport on macOS fullscreen (no cutoff)
+        table.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
+
         TableHeaderRenderer.install(table, HEADER_BG);
 
         table.setDefaultRenderer(Object.class, new DefaultTableCellRenderer() {
@@ -618,8 +621,8 @@ public class RecipeListUI extends JFrame {
                 for (int i = 0; i < target.length; i++) {
                     TableColumn col = cm.getColumn(i);
                     col.setPreferredWidth(target[i]);
-                    col.setMinWidth(
-                            Math.min(target[i], (minWidths != null && i < minWidths.length) ? minWidths[i] : 10));
+                    // ✅ allow shrinking so nothing gets cut off
+                    col.setMinWidth(10);
                     col.setWidth(target[i]);
                 }
                 table.revalidate();

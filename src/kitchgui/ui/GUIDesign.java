@@ -291,6 +291,11 @@ public class GUIDesign extends JFrame {
             q = fq;
             e = fe;
             searchInv = fsearch;
+
+            JButton move = secondaryBtn("Move 0 Qty → Shopping");
+            rail.add(move);
+            ((GridLayout) rail.getLayout()).setRows(4);
+            move.addActionListener(evt -> onGoShopping());
         } else {
             shoppingTable = table;
             sp = fp;
@@ -299,15 +304,6 @@ public class GUIDesign extends JFrame {
             sq = fq;
             se = fe;
             searchShop = fsearch;
-        }
-
-        // Extra rail action occupying space: move zero-qty on this card if it's
-        // inventory
-        if (inventory) {
-            JButton move = secondaryBtn("Move 0 Qty → Shopping");
-            rail.add(move);
-            ((GridLayout) rail.getLayout()).setRows(4);
-            move.addActionListener(evt -> onGoShopping());
         }
 
         return card;
@@ -375,7 +371,8 @@ public class GUIDesign extends JFrame {
         table.setFillsViewportHeight(true);
         table.setShowHorizontalLines(false);
         table.setShowVerticalLines(false);
-        table.setAutoResizeMode(JTable.AUTO_RESIZE_OFF);
+        // ✅ Make all columns fit the viewport (prevents cutoff on macOS fullscreen)
+        table.setAutoResizeMode(JTable.AUTO_RESIZE_ALL_COLUMNS);
 
         JTableHeaderRenderer.install(table, HEADER_BG);
 
@@ -535,8 +532,8 @@ public class GUIDesign extends JFrame {
                 for (int i = 0; i < target.length; i++) {
                     TableColumn col = cm.getColumn(i);
                     col.setPreferredWidth(target[i]);
-                    col.setMinWidth(
-                            Math.min(target[i], (minWidths != null && i < minWidths.length) ? minWidths[i] : 10));
+                    // ✅ allow columns to shrink fully to fit viewport
+                    col.setMinWidth(10);
                     col.setWidth(target[i]);
                 }
                 table.revalidate();

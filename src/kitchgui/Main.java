@@ -31,7 +31,7 @@ public final class Main {
             } catch (Exception ignore) {
             }
 
-            // Dark Nimbus tweaks with your palette
+            // Dark Nimbus tweaks with palette
             UIManager.put("control", OXFORD);
             UIManager.put("nimbusLightBackground", CHARCOAL);
             UIManager.put("info", CHARCOAL);
