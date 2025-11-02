@@ -81,6 +81,3 @@ Each part of the app handles one job:
 This project is released under the [MIT License](./LICENSE).
 
 ---
-
-> *“Good design makes everyday tasks simple and intuitive.”*  
-> — Miguel Beltran
