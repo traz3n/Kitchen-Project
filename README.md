@@ -1,83 +1,84 @@
-# 🧑‍🍳 Kitch | Kitchen Inventory & Recipe Manager
+# 🍽️ Kitch — Inventory Management System
 
-**Kitch** is a personal Java project I built to organize my kitchen inventory, shopping list, and recipes in one place.  
-It automatically saves everything as you make changes and keeps your data connected between windows.
-
----
-
-## 🌟 Overview
-
-I originally built this app using **Eclipse WindowBuilder** to design the interface, then improved and modernized it in **VS Code** with custom UI and auto-save features.  
-It’s written in **Java 17 (Swing)** and stores all data in simple **CSV and text files**, so you can easily view or edit them outside the app.
+Kitch is a lightweight Java-based inventory management system demonstrating clean OOP architecture and efficient data handling using Java Collections. It is designed to showcase object-oriented design, modular components, and practical command-line functionality.
 
 ---
 
-## 🧩 What It Can Do
+## 🚀 Features
 
-### 🗃️ Inventory & Shopping
-- Add, edit, and delete items with automatic saving  
-- Separate tables for your pantry and shopping list  
-- “Move to Shopping” automatically detects items with 0 quantity  
-- Search instantly as you type  
-- Data stored in `/data/inventory.csv` and `/data/shopping.csv`
+### 📦 Inventory Management
+- Add new items
+- Remove items
+- Update item quantity or name
+- Display full inventory
 
-### 🍲 Recipe Builder
-- Build and save your own recipes  
-- Two-pane view: Ingredients and Steps  
-- Switch between multiple recipes easily  
-- Connect ingredients directly with your inventory list  
-- Auto-saves in `/data/ingredients` and `/data/recipes`
+### 🧱 Clean OOP Design
+- Encapsulated Item model
+- Service layer for inventory operations
+- Clear separation of concerns
+- Easy to maintain and extend
 
-### 🎨 Interface & Design
-- Built with **Java Swing** (customized with WindowBuilder)  
-- Clean **dark mode** color palette:  
-  `#011936` Oxford Blue · `#465362` Charcoal · `#82A3A1` Cambridge Blue · `#9FC490` Olivine · `#C0DFA1` Tea Green  
-- Large rounded buttons with hover effects  
-- Responsive layout that scales with your window  
-- No “Save” button, everything updates live
+### ⚡ Efficient Data Handling
+- Uses Java Collections (ArrayList / HashMap)
+- Fast item lookup
+- Scalable structure
 
 ---
 
-## ⚙️ Tech Details
+## 🛠 Tech Stack
 
-| Category | Tools |
-|-----------|-------|
-| Language | Java SE 17 |
-| GUI | Swing + WindowBuilder (Eclipse) |
-| Editor | VS Code & Eclipse |
-| Storage | CSV / TXT (auto-save) |
-| Theme | Custom dark mode |
+- Language: Java (JDK 17+ recommended)
+- Concepts: OOP, Encapsulation, Data Structures, Collections API
+- Structure: Models → Services → Main runner
 
 ---
 
-## 🧠 How It Works
+## 📁 Project Structure
 
-Each part of the app handles one job:
-- The **logic** (like saving or checking quantities) runs behind the scenes.  
-- The **interface** (built with Swing) displays everything clearly.  
-- Data is **auto-saved** to CSV and TXT files after every change.  
-- Everything updates live, no manual file management needed.
-
----
-
-## 🚀 Future Ideas
-- 🔔 Expiry reminders and notifications  
-- 📱 A web or mobile version
-- 🧾 Export grocery lists 
-- 🧠 Smart recipe suggestions
+    /src
+      /models
+        Item.java
+      /services
+        InventoryService.java
+      Main.java
 
 ---
 
-## 👨‍💻 Developer
+## ▶️ Running the Program
 
-**Miguel Joaquin Beltran**  
-📍 UC Davis - Computer Science Major (Class of 2027)  
-💼 [LinkedIn](https://www.linkedin.com/in/miguel-beltran-184741294/) | [GitHub](https://github.com/traz3n)
+    git clone https://github.com/YOUR_USERNAME/kitch
+    cd kitch
+    javac Main.java
+    java Main
+
+---
+
+## 📌 Example CLI Options
+
+1. Add Item  
+2. Remove Item  
+3. Update Item  
+4. View Inventory  
+5. Exit  
 
 ---
 
-## 🪶 License
+## 🧭 Roadmap
 
-This project is released under the [MIT License](./LICENSE).
+- CSV import/export
+- GUI or web interface
+- Sorting & filtering
+- Category tagging
 
 ---
+
+## 📄 License
+MIT License
+
+---
+
+## 👤 Author
+Miguel Beltran  
+UC Davis — Computer Science  
+LinkedIn: YOUR_LINKEDIN_URL  
+Email: migueljoaquinbeltran@gmail.com
