@@ -1,84 +1,35 @@
-# 🍽️ Kitch — Inventory Management System
+# Kitch — Inventory Management System
 
-Kitch is a lightweight Java-based inventory management system demonstrating clean OOP architecture and efficient data handling using Java Collections. It is designed to showcase object-oriented design, modular components, and practical command-line functionality.
+Kitch is a simple Java-based inventory management system that demonstrates OOP principles and basic data structure usage.
 
----
-
-## 🚀 Features
-
-### 📦 Inventory Management
-- Add new items
+## Features
+- Add items
 - Remove items
-- Update item quantity or name
-- Display full inventory
+- Update items
+- View inventory list
 
-### 🧱 Clean OOP Design
-- Encapsulated Item model
-- Service layer for inventory operations
-- Clear separation of concerns
-- Easy to maintain and extend
+## Tech Stack
+- Java (JDK 17+ recommended)
+- OOP design
+- Java Collections
 
-### ⚡ Efficient Data Handling
-- Uses Java Collections (ArrayList / HashMap)
-- Fast item lookup
-- Scalable structure
+## Project Structure
 
----
-
-## 🛠 Tech Stack
-
-- Language: Java (JDK 17+ recommended)
-- Concepts: OOP, Encapsulation, Data Structures, Collections API
-- Structure: Models → Services → Main runner
-
----
-
-## 📁 Project Structure
-
-    /src
-      /models
+    src/
+      models/
         Item.java
-      /services
+      services/
         InventoryService.java
       Main.java
 
----
-
-## ▶️ Running the Program
+## How to Run
 
     git clone https://github.com/YOUR_USERNAME/kitch
     cd kitch
     javac Main.java
     java Main
 
----
-
-## 📌 Example CLI Options
-
-1. Add Item  
-2. Remove Item  
-3. Update Item  
-4. View Inventory  
-5. Exit  
-
----
-
-## 🧭 Roadmap
-
-- CSV import/export
-- GUI or web interface
-- Sorting & filtering
-- Category tagging
-
----
-
-## 📄 License
-MIT License
-
----
-
-## 👤 Author
+## Author
 Miguel Beltran  
 UC Davis — Computer Science  
-LinkedIn: YOUR_LINKEDIN_URL  
-Email: migueljoaquinbeltran@gmail.com
+LinkedIn: [YOUR_LINKEDIN_URL](https://www.linkedin.com/in/miguel-beltran-184741294/)
