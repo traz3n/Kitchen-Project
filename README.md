@@ -1,19 +1,19 @@
-# Kitch — Inventory Management System
+# 🍽️ Kitch — Inventory Management System
 
-Kitch is a simple Java-based inventory management system that demonstrates OOP principles and basic data structure usage.
+Kitch is a simple Java-based 🧰 inventory management system that demonstrates **OOP**, **clean design**, and **basic data structures**.
 
-## Features
-- Add items
-- Remove items
-- Update items
-- View inventory list
+## ✨ Features
+- ➕ Add items
+- ➖ Remove items
+- ✏️ Update item details
+- 📋 View inventory list
 
-## Tech Stack
-- Java (JDK 17+ recommended)
-- OOP design
-- Java Collections
+## 🛠 Tech Stack
+- **Java (JDK 17+)**
+- **OOP principles**
+- **Java Collections**
 
-## Project Structure
+## 📁 Project Structure
 
     src/
       models/
@@ -22,14 +22,14 @@ Kitch is a simple Java-based inventory management system that demonstrates OOP p
         InventoryService.java
       Main.java
 
-## How to Run
+## ▶️ How to Run
 
     git clone https://github.com/YOUR_USERNAME/kitch
     cd kitch
     javac Main.java
     java Main
 
-## Author
+## 👤 Author
 Miguel Beltran  
 UC Davis — Computer Science  
-LinkedIn: [YOUR_LINKEDIN_URL](https://www.linkedin.com/in/miguel-beltran-184741294/)
+LinkedIn: https://www.linkedin.com/in/miguel-beltran-184741294/
